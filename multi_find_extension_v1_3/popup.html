@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Multi Find</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main>
+  <div class="title">Multi Find <span>v1.3</span></div>
+
+  <textarea id="keywords" rows="3"
+    placeholder="輸入關鍵字，例如：CTA, MRA, PTA"></textarea>
+
+  <div class="hint">
+    輸入後自動儲存並搜尋。重新整理或開新分頁時也會自動標示。
+  </div>
+
+  <div class="row">
+    <button id="clear">清除關鍵字與標示</button>
+  </div>
+
+  <div class="row nav">
+    <button id="prev">← 上一個</button>
+    <span id="pos">0 / 0</span>
+    <button id="next">下一個 →</button>
+  </div>
+
+  <div id="status">尚未設定關鍵字</div>
+  <div id="summary"></div>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>
